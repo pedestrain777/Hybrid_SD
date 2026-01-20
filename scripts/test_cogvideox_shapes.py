@@ -17,8 +17,8 @@ def analyze_config_compatibility():
     print("配置兼容性分析")
     print("="*60)
     
-    model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-    model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+    model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+    model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
     
     # 加载配置
     config_5b_transformer = json.load(open(f"{model_path_5b}/transformer/config.json"))
@@ -144,7 +144,7 @@ def test_with_pipeline():
         print("\n测试5B模型pipeline...")
         try:
             pipeline_5b = CogVideoXPipeline.from_pretrained(
-                "pretrained_models/THUDM--CogVideoX-5B",
+                "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B",
                 torch_dtype=torch.float16
             ).to(device)
             print("✅ 5B pipeline加载成功")
@@ -156,7 +156,7 @@ def test_with_pipeline():
         print("\n测试2B模型pipeline...")
         try:
             pipeline_2b = CogVideoXPipeline.from_pretrained(
-                "pretrained_models/THUDM--CogVideoX-2B",
+                "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B",
                 torch_dtype=torch.float16
             ).to(device)
             print("✅ 2B pipeline加载成功")

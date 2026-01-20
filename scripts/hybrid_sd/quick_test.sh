@@ -2,7 +2,7 @@
 # 快速测试脚本 - 只运行一个步数配置
 export PYTHONPATH='.'
 
-MODEL_ROOT=pretrained_models
+MODEL_ROOT=/data/models/hybridsd_checkpoint
 PATH_MODEL_LARGE=$MODEL_ROOT/CompVis--stable-diffusion-v1-4
 PATH_MODEL_SMALL=$MODEL_ROOT/bk-sdm-tiny
 

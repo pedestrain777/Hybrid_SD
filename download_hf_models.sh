@@ -4,7 +4,7 @@ set -euo pipefail
 # 配置
 ENV_NAME="${ENV_NAME:-hybrid_sd}"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET_DIR="${ROOT_DIR}/pretrained_models"
+TARGET_DIR="/data/models/hybridsd_checkpoint"
 mkdir -p "${TARGET_DIR}"
 
 # 使用镜像（可通过环境变量覆盖）

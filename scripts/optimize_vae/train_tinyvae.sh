@@ -26,8 +26,8 @@ CUDA_VISIBLE_DEVICES=6,7 accelerate launch --multi_gpu --num_processes ${NUM_GPU
     --resolution 512 \
     --mixed_precision no \
     --train_data_dir datasets/Laion_aesthetics_5plus_1024_33M/Laion33m_data_test \
-    --pretrained_model_name_or_path "pretrained_models/runwayml--stable-diffusion-v1-5"  \
-    --student_model_name_or_path  "pretrained_models/madebyollin--taesd"  \
+    --pretrained_model_name_or_path "/data/models/hybridsd_checkpoint/runwayml--stable-diffusion-v1-5"  \
+    --student_model_name_or_path  "/data/models/hybridsd_checkpoint/madebyollin--taesd"  \
     --experiment_name fintune_dino_combine_pixelfilter \
     --disc_start 5000 \
     --add_lq_input True \

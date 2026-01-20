@@ -1,10 +1,10 @@
 export PYTHONPATH='.'
-MODEL_ROOT=pretrained_models
+MODEL_ROOT=/data/models/hybridsd_checkpoint
 MODEL_LARGE=stabilityai--stable-diffusion-xl-base-1.0
 MODEL_SMALL=koala-700m
 
 PATH_MODEL_LARGE=$MODEL_ROOT/$MODEL_LARGE
-PATH_MODEL_SMALL=pretrained_models/koala-700m
+PATH_MODEL_SMALL=$MODEL_ROOT/$MODEL_SMALL
 GPU_NUM=1
 
 

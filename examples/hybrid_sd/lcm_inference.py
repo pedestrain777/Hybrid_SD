@@ -92,7 +92,7 @@ def log_validation(vae, unet, scheduler_path, device, weight_dtype, step=4, seed
 if __name__=="__main__":
 
     # SD1.4 
-    SD14_path = "pretrained_models/CompVis--stable-diffusion-v1-4"
+    SD14_path = "/data/models/hybridsd_checkpoint/CompVis--stable-diffusion-v1-4"
     vae = AutoencoderKL.from_pretrained(
         SD14_path,
         subfolder="vae",

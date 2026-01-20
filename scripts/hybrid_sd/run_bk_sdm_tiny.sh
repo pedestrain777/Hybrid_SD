@@ -1,6 +1,6 @@
 #!/bin/bash
 export PYTHONPATH='.'
-MODEL_ROOT=pretrained_models
+MODEL_ROOT=/data/models/hybridsd_checkpoint
 MODEL_LARGE=CompVis--stable-diffusion-v1-4
 MODEL_SMALL=bk-sdm-tiny
 

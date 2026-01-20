@@ -9,12 +9,12 @@
 
 ### 2. 模型准备
 - [x] **大模型**：`CompVis--stable-diffusion-v1-4` 已下载
-  - 路径：`pretrained_models/CompVis--stable-diffusion-v1-4/`
+  - 路径：`/data/models/hybridsd_checkpoint/CompVis--stable-diffusion-v1-4/`
   - 参数量：859.5M
   - MACs：677.22G per step
   
 - [x] **小模型**：`bk-sdm-tiny` 已下载
-  - 路径：`pretrained_models/bk-sdm-tiny/`
+  - 路径：`/data/models/hybridsd_checkpoint/bk-sdm-tiny/`
   - 参数量：323.4M
   - MACs：409.91G per step
 

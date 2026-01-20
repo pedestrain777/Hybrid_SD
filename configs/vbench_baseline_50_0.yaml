@@ -5,8 +5,8 @@ prompt_file: VBench-master/prompts/all_dimension.txt
 negative_prompt_file: null
 
 models:
-  - pretrained_models/THUDM--CogVideoX-5B
-  - pretrained_models/THUDM--CogVideoX-2B
+  - /data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B
+  - /data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B
 steps: "50,0"
 
 num_frames: 49

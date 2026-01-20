@@ -20,7 +20,7 @@ def test_pipeline_initialization():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
         
         # 加载pipeline - 先加载标准pipeline，然后转换为Hybrid
         print(f"\n加载pipeline: {model_path_5b}")
@@ -75,8 +75,8 @@ def test_hybrid_mode_detection():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         from diffusers import CogVideoXPipeline
         base_pipeline = CogVideoXPipeline.from_pretrained(
@@ -147,8 +147,8 @@ def test_rotary_embeddings():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         from diffusers import CogVideoXPipeline
         base_pipeline = CogVideoXPipeline.from_pretrained(

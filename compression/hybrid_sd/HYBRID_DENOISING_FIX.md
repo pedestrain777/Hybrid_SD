@@ -140,8 +140,8 @@ Step 12/25 (2B): noise_pred guided std: 1.1365
 
 - `compression/hybrid_sd/diffusers/pipeline_cogvideox.py`：去噪循环和模型切换逻辑
 - `compression/hybrid_sd/inference_pipeline.py`：scheduler 配置加载
-- `pretrained_models/CogVideoX-5b/scheduler/scheduler_config.json`：5B 模型配置
-- `pretrained_models/CogVideoX-2b/scheduler/scheduler_config.json`：2B 模型配置
+- `/data/models/hybridsd_checkpoint/CogVideoX-5b/scheduler/scheduler_config.json`：5B 模型配置
+- `/data/models/hybridsd_checkpoint/CogVideoX-2b/scheduler/scheduler_config.json`：2B 模型配置
 
 ## 验证方法
 
@@ -149,7 +149,7 @@ Step 12/25 (2B): noise_pred guided std: 1.1365
 
 ```bash
 python examples/hybrid_sd/hybrid_video.py \
-    --model_paths pretrained_models/CogVideoX-5b pretrained_models/CogVideoX-2b \
+    --model_paths /data/models/hybridsd_checkpoint/CogVideoX-5b /data/models/hybridsd_checkpoint/CogVideoX-2b \
     --steps 10,15 \
     --output_dir results/test_hybrid
 ```

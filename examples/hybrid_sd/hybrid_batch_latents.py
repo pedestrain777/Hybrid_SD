@@ -56,7 +56,7 @@ def parse_args():
     parser.add_argument(
         "--pretrained_teacher_model",
         type=str,
-        default="pretrained_models/runwayml--stable-diffusion-v1-5",
+        default="/data/models/hybridsd_checkpoint/runwayml--stable-diffusion-v1-5",
         help="The path to specific teacher model.",
     )
     parser.add_argument("--data_list", type=str, default="./data/mscoco_val2014_30k/metadata.csv")

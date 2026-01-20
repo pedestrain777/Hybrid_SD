@@ -148,7 +148,7 @@ class ImageEmbeddingDataset(wds.DataPipeline, wds.compat.FluidInterface):
         
 
 
-def WebDataset(url, batch_size, size=512, tokenizer_path='pretrained_models/runwayml--stable-diffusion-v1-5', num_workers=8, prefetch_factor=32):
+def WebDataset(url, batch_size, size=512, tokenizer_path='/data/models/hybridsd_checkpoint/runwayml--stable-diffusion-v1-5', num_workers=8, prefetch_factor=32):
     print(f'loading dataset from path: {url}')
     urls = [os.path.join(url, file_name) for file_name in os.listdir(url) if file_name.endswith('.tar')]
     print(f'load dataset done')

@@ -207,8 +207,8 @@ def hybrid_cogvideox_inference(
 - 测试脚本: `scripts/test_cogvideox_shapes.py`
 - 验证脚本: `scripts/verify_cogvideox_compatibility.py`
 - 模型路径: 
-  - 5B: `pretrained_models/THUDM--CogVideoX-5B`
-  - 2B: `pretrained_models/THUDM--CogVideoX-2B`
+  - 5B: `/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B`
+  - 2B: `/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B`
 
 ---
 

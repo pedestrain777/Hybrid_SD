@@ -1,6 +1,6 @@
 export PYTHONPATH='.'
 
-MODEL_ROOT="pretrained_models"
+MODEL_ROOT="/data/models/hybridsd_checkpoint"
 DATA_ROOT="datasets"
 
 TRAIN_DATA_DIR="$DATA_ROOT/laion_aes/preprocessed_11k"  

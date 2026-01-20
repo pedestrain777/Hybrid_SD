@@ -301,8 +301,8 @@ def test_cross_model_inference(model_path_5b, model_path_2b, device="cuda"):
 
 def main():
     """主函数"""
-    model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-    model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+    model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+    model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
     
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"使用设备: {device}")

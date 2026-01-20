@@ -1,7 +1,7 @@
 export PYTHONPATH='.'
 
 DATA_ROOT=datasets
-MODEL_ROOT=pretrained_models
+MODEL_ROOT=/data/models/hybridsd_checkpoint
 
 
 TEACHER_MODEL=CompVis--stable-diffusion-v1-4

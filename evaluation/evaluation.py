@@ -140,7 +140,7 @@ def inference_gen_dir_gpu(args):
     if args.if_baseline:
         weight_dtype = torch.float16
         from compression.optimize_vae.models.autoencoder_kl import AutoencoderKL
-        model = AutoencoderKL.from_pretrained('pretrained_models/runwayml--stable-diffusion-v1-5', subfolder="vae",torch_dtype=weight_dtype).eval()
+        model = AutoencoderKL.from_pretrained('/data/models/hybridsd_checkpoint/runwayml--stable-diffusion-v1-5', subfolder="vae",torch_dtype=weight_dtype).eval()
         print(20*'#' + 'loading model : this is AutoencoderKL {}'.format(str(weight_dtype)))
 
      

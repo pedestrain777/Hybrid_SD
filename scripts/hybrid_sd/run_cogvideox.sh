@@ -1,6 +1,6 @@
 #!/bin/bash
 export PYTHONPATH='.'
-MODEL_ROOT=pretrained_models
+MODEL_ROOT=/data/models/hybridsd_checkpoint
 MODEL_LARGE=THUDM--CogVideoX-5B
 MODEL_SMALL=THUDM--CogVideoX-2B
 

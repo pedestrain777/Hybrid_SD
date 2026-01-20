@@ -291,7 +291,7 @@ def parse_args():
 
     parser.add_argument("--gen_dir", type=str, default = 'evaluation/coco2017/tiny_model_0601')
     parser.add_argument("--input_root_real", type=str,default = 'evaluation/coco2017/val2017_resize_5')
-    parser.add_argument("--autoencoderkl_path", type=str,default = 'pretrained_models/runwayml--stable-diffusion-v1-5')
+    parser.add_argument("--autoencoderkl_path", type=str,default = '/data/models/hybridsd_checkpoint/runwayml--stable-diffusion-v1-5')
     parser.add_argument("--perceptual_weight", type=float,default = 0.001)
     parser.add_argument("--train_all_steps_start", type=float,default = 100000)
     parser.add_argument("--device_ids", type=str,default = '0, 1, 2, 3')

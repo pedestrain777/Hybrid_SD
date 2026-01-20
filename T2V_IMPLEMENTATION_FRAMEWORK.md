@@ -103,8 +103,8 @@ scripts/hybrid_sd/
 - 减少内存占用
 
 ### 5.4 模型路径
-- 5B: `pretrained_models/THUDM--CogVideoX-5B`
-- 2B: `pretrained_models/THUDM--CogVideoX-2B`
+- 5B: `/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B`
+- 2B: `/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B`
 
 ## 六、可复用部分
 

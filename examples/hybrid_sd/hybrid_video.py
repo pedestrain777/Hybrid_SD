@@ -44,8 +44,8 @@ def parse_args():
         "--model_id",
         type=str,
         default=[
-            "pretrained_models/CogVideoX-5b",
-            "pretrained_models/CogVideoX-2b"
+            "/data/models/hybridsd_checkpoint/CogVideoX-5b",
+            "/data/models/hybridsd_checkpoint/CogVideoX-2b"
         ],
         nargs="+",
         help="Path to pretrained model directories.",

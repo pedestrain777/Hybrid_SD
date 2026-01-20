@@ -300,7 +300,7 @@ class HybridSDXLInferencePipeline:
             vae = AutoencoderTiny.from_pretrained(self.args.vae_path).to(self.device, dtype=torch.float16).requires_grad_(False)
         else:
             vae = AutoencoderKL.from_pretrained(
-                    "pretrained_models/madebyollin--sdxl-vae-fp16-fix", subfolder="vae"
+                    "/data/models/hybridsd_checkpoint/madebyollin--sdxl-vae-fp16-fix", subfolder="vae"
                 ).to(self.device, dtype=torch.float16).requires_grad_(False)
         unets = []
         for path in self.weight_folders:

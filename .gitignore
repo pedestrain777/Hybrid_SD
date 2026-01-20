@@ -13,7 +13,7 @@ models/
 checkpoints/
 weights/
 flolpips/weights/
-pretrained_models/
+# pretrained_models/ 已移动到 /data/models/hybridsd_checkpoint
 
 # --------------- 输出目录 ---------------
 output/

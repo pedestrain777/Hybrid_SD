@@ -3,8 +3,8 @@
 ## 模型准备
 
 已准备好的模型：
-- **大模型（云端）**: `pretrained_models/CompVis--stable-diffusion-v1-4`
-- **小模型（边缘）**: `pretrained_models/bk-sdm-tiny`
+- **大模型（云端）**: `/data/models/hybridsd_checkpoint/CompVis--stable-diffusion-v1-4`
+- **小模型（边缘）**: `/data/models/hybridsd_checkpoint/bk-sdm-tiny`
 
 ## 协同推理原理
 
@@ -42,7 +42,7 @@ export PYTHONPATH='.'
 
 # 运行协同推理（示例：大模型10步 + 小模型15步）
 CUDA_VISIBLE_DEVICES=0 python3 examples/hybrid_sd/hybrid.py \
-    --model_id pretrained_models/CompVis--stable-diffusion-v1-4 pretrained_models/bk-sdm-tiny \
+    --model_id /data/models/hybridsd_checkpoint/CompVis--stable-diffusion-v1-4 /data/models/hybridsd_checkpoint/bk-sdm-tiny \
     --steps 10,15 \
     --prompts_file examples/hybrid_sd/prompts.txt \
     --seed 1674753452 \

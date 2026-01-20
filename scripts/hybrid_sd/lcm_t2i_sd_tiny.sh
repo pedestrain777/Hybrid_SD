@@ -2,7 +2,7 @@ export PYTHONPATH='.'
 
 
 
-MODEL_DIR="pretrained_models/CompVis--stable-diffusion-v1-4"
+MODEL_DIR="/data/models/hybridsd_checkpoint/CompVis--stable-diffusion-v1-4"
 TRAIN_DATA_DIR="datasets/laion2b_en_aesthetics/data"
 
 

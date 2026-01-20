@@ -27,8 +27,8 @@ def test_pipeline_initialization():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         weight_folders = [model_path_5b, model_path_2b]
         seed = 42
@@ -73,8 +73,8 @@ def test_step_config():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         weight_folders = [model_path_5b, model_path_2b]
         args = MockArgs(steps=[10, 15])
@@ -117,8 +117,8 @@ def test_model_loading():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         weight_folders = [model_path_5b, model_path_2b]
         args = MockArgs(steps=[10, 15])
@@ -169,8 +169,8 @@ def test_pipeline_structure():
     print("="*60)
     
     try:
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         weight_folders = [model_path_5b, model_path_2b]
         args = MockArgs(steps=[10, 15])

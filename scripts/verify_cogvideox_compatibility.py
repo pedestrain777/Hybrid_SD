@@ -71,8 +71,8 @@ def test_transformer_shapes():
     try:
         from diffusers import CogVideoXTransformer3DModel
         
-        model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-        model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+        model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+        model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
         
         print("\n加载模型...")
         print(f"5B模型路径: {model_path_5b}")
@@ -206,8 +206,8 @@ def main():
     print("CogVideoX-5B 和 CogVideoX-2B 兼容性验证")
     print("="*60)
     
-    model_path_5b = "pretrained_models/THUDM--CogVideoX-5B"
-    model_path_2b = "pretrained_models/THUDM--CogVideoX-2B"
+    model_path_5b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-5B"
+    model_path_2b = "/data/models/hybridsd_checkpoint/THUDM--CogVideoX-2B"
     
     # 检查模型路径
     if not os.path.exists(model_path_5b):
